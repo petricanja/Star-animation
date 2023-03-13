@@ -1,0 +1,49 @@
+
+@keyframes my-animation {
+    0% {
+        transform: translateX(0px) rotate(0deg);
+        width: 250px;
+        height: 180px;
+    }
+
+    33% {
+        transform: translateX(0px) rotate(360deg);
+        width: 250px;
+        height: 180px;
+    }
+
+    66% {
+        transform: translate(300px, 50px) rotate(360deg);
+        width: 100px;
+        height: 75px;
+    }
+
+    100% {
+        transform: translateX(0px) rotate(0deg);
+        width: 250px;
+        height: 180px;
+    }
+}
+
+
+.box {
+    background-color: #A2687E;
+    background-image: url("star.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    color: white;
+    margin: 64px auto;
+    font-family: sans-serif;
+    font-size: 28px;
+    width: 250px;
+    height: 180px;
+    border-radius: 8px;
+
+    animation: my-animation 3s ease 2s 2 reverse forwards running;
+
+}
+
+.box:hover {
+    animation-play-state: paused;
+}
